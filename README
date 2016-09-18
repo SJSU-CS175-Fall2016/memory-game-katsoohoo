@@ -1,0 +1,9 @@
+1. Name: Katherine Soohoo
+2. Email: katherine.soohoo@sjsu.edu
+3. Time taken: 24 hours
+4. Group: N/A
+5. Android version & Screen size: Lollipop 5.0 (API level 21), 5.2 inches
+6. Comments:
+For the bonus points, instead of asking if the player wants to restart or resume the game,
+I drew two buttons, "Continue" and "New Game," only if the player was in a game before.
+Otherwise, the Main Activity will just have "Play".

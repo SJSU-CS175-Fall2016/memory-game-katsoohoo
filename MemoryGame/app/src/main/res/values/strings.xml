@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MemoryGame</string>
+    <string name="rules">
+        1. The user is shown 20 tiles. Hidden below these tiles are 10 random images each repeated twice.
+        \n\n
+        2. The user can touch on any two tiles. Touching on a tile will show the image.
+        \n\n
+        3. If the two tiles have matching images, they fill fade out and the user gets a point. (Points are updated at the end of a game)
+        \n\n
+        4. If the two tiles do NOT have matching images, they flip over to being tiles again.
+        \n\n
+        5. Hitting the back soft key while playing will take the user back to the first screen. Trying to play will restore the playing activity to the previous state.
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
