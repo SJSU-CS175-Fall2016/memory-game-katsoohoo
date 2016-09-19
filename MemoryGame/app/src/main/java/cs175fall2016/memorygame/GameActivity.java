@@ -157,12 +157,15 @@ public class GameActivity extends AppCompatActivity {
     private void gameFinished(GridView gridView) {
         Log.i("game", "Game finished.");
         isGameFinished = true;
+        ((TextView) findViewById(R.id.memoryGameText)).setText("You win!");
 
+        // Update total points
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putInt("points", sharedPreferences.getInt("points", 0) + matchedCount);
         editor.commit();
         ((TextView) findViewById(R.id.pointsText)).setText("Points: "+ sharedPreferences.getInt("points", 0));
 
+        // Disable grid view touch
         gridView.setEnabled(false);
         final Animation fadeLoop = AnimationUtils.loadAnimation(this, R.anim.fadeloop);
         gridView.startAnimation(fadeLoop);
